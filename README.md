@@ -23,7 +23,7 @@ SoundSight 是基于 Zynq-7020 的声音感知与双轴指向系统。系统采�
 | `skill/` | FPGA 模块验证、PYNQ Overlay/DMA 验证两个技能包 |
 | `report/` | 设计报告、大模型协作记录 |
 
-[设计报告](report/design-report.docx) · [大模型协作记录](report/ai-collaboration.md) · [系统架构](src/design/main-architecture.md) · [实测结果](data/evidence/final-board-20261103/readme.md)
+[设计报告（PDF）](report/design-report.pdf) · [设计报告（Word）](report/design-report.docx) · [大模型协作记录](report/ai-collaboration.md) · [系统架构](src/design/main-architecture.md) · [实测结果](data/evidence/final-board-20261103/readme.md)
 
 ## 复现步骤
 

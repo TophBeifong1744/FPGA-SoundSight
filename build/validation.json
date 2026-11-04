@@ -123,9 +123,9 @@
   "hardware": "NOT_RUN",
   "final_static": {
     "status": "PASS",
-    "files": 1263,
+    "files": 1264,
     "mapped_files": 1201,
-    "relative_links": 269,
+    "relative_links": 271,
     "broken_links": 0,
     "active_local_file_links": 0,
     "runtime_payload": 204,
@@ -152,21 +152,32 @@
     "program_and_hardware": "UNCHANGED",
     "software_regression": "PRIOR_245_EXECUTIONS_SAME_PROGRAM_BYTES",
     "report_files": [
-      "design-report.docx",
+      "README.md",
       "ai-collaboration.md",
-      "README.md"
+      "design-report.docx",
+      "design-report.pdf"
     ]
   },
   "documentation_check": {
     "status": "PASS",
     "readme": "PROJECT_INTRODUCTION_AND_REPRODUCTION",
     "restored_files": 1201,
-    "relative_links": 269,
+    "relative_links": 271,
     "broken_links": 0,
     "runtime_and_product_docs": "SYNCHRONIZED",
     "usb_docs": "SYNCHRONIZED",
     "program_and_hardware": "UNCHANGED",
     "software_regression": "PRIOR_245_EXECUTIONS_SAME_PROGRAM_BYTES",
     "hardware_actions": 0
+  },
+  "report_pdf": {
+    "file": "report/design-report.pdf",
+    "source": "USER_EXPORTED_PDF",
+    "pages": 21,
+    "structure": "PASS",
+    "encrypted": false,
+    "sha256": "e0452139a772e5f0356a3cb01e13b5a5d5b872ba63aacb77221e3fd8feac825b",
+    "docx_and_collaboration_content": "UNCHANGED",
+    "filenames": "ENGLISH"
   }
 }

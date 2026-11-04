@@ -1,0 +1,25 @@
+# 通用验证技能包
+
+两个技能本体均完整包含在 [skill](../skill/README.md)，无需其他仓库或另行下载技能ZIP。`fpga-module-verification` 用于模块接口合同与XSim自检；`pynq-overlay-dma-validation` 用于Overlay/DMA契约、异常恢复与会话日志审计。
+
+在仓库根目录运行离线验证：
+
+```text
+python -B build/release/check_competition_skills.py --skills-root skill --output build/checks/skills
+```
+
+配置本地Vivado后，可另加 `--vivado-bin` 参数运行RTL示例。已有验证记录为模块7项、DMA与日志74项方法/61子测试，以及PCM792次、elastic13800次XSim检查。
+
+独立导出两个技能：
+
+```text
+python -B build/release/pack_competition_skills.py --output board/output/skills.zip
+```
+
+安装到接收方自己的助手技能目录时，明确指定目的路径：
+
+```text
+python -B build/release/install_competition_skills.py --skills-root skill --destination YOUR_SKILLS_DIRECTORY
+```
+
+安装入口会将仓库目录的小写入口恢复为助手要求的SKILL.md，不覆盖已有安装。

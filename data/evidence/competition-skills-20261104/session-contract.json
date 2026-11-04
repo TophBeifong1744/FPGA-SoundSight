@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "success": {
+    "path": [
+      "result"
+    ],
+    "allowed": [
+      "PASS"
+    ]
+  },
+  "zero": [
+    [
+      "stats",
+      "fault_or"
+    ],
+    [
+      "hardware",
+      "audio",
+      "errors"
+    ]
+  ],
+  "empty": [
+    [
+      "error"
+    ],
+    [
+      "first_fault"
+    ],
+    [
+      "cleanup_errors"
+    ]
+  ],
+  "true": [
+    [
+      "dma_halted"
+    ]
+  ],
+  "duration": [
+    "elapsed_seconds"
+  ],
+  "counters": [
+    {
+      "name": "snapshot_evictions",
+      "start": [
+        "stats",
+        "drops_first"
+      ],
+      "end": [
+        "stats",
+        "drops_last"
+      ]
+    }
+  ],
+  "tail": {
+    "path": [
+      "hardware",
+      "fault"
+    ],
+    "allowed_mask": 64,
+    "stop_path": [
+      "stop_reason"
+    ],
+    "stop_values": [
+      "user_stop"
+    ]
+  },
+  "recent_results": [
+    "speaker_worker",
+    "results"
+  ],
+  "statistics": [
+    "speaker_worker",
+    "statistics"
+  ]
+}

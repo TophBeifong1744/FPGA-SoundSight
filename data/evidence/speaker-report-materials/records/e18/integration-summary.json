@@ -1,0 +1,8 @@
+[
+  {
+    "label": "replacement-solver",
+    "script": "software/tetra3d/tests/test_solver_3d_options.py",
+    "exit_code": 0,
+    "elapsed_s": 0.857
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "scope": "SUBMIT_ONLY_PORTABILITY_AND_HOST_CHECKS",
+  "status": "PASS",
+  "restored_files": 1201,
+  "markdown_html_links": 269,
+  "broken_links": 0,
+  "s2_recipe": {
+    "files": 49,
+    "payload_hashes": "PASS",
+    "overwrite_rejected": true,
+    "eda": "NOT_RUN"
+  },
+  "tests": [
+    {
+      "name": "test_current_runtime.py",
+      "exit": 0,
+      "tests_run": 11
+    },
+    {
+      "name": "test_volume_gate.py",
+      "exit": 0,
+      "tests_run": 15
+    },
+    {
+      "name": "software/tetra3d/tests/test_online_3d.py",
+      "exit": 0,
+      "tests_run": 21
+    },
+    {
+      "name": "software/tetra3d/tests/test_follow_sound.py",
+      "exit": 0,
+      "tests_run": 7
+    },
+    {
+      "name": "software/tests/test_speaker_follow.py",
+      "exit": 0,
+      "tests_run": 27
+    },
+    {
+      "name": "software/tests/test_speaker_display.py",
+      "exit": 0,
+      "tests_run": 7
+    },
+    {
+      "name": "software/tetra3d/tests/test_cf1.py",
+      "exit": 0,
+      "tests_run": 16
+    },
+    {
+      "name": "software/tests/test_screen_product.py",
+      "exit": 0,
+      "tests_run": 44
+    },
+    {
+      "name": "software/tests/test_screen_rotation.py",
+      "exit": 0,
+      "tests_run": 7
+    },
+    {
+      "name": "software/tests/test_speaker_delete.py",
+      "exit": 0,
+      "tests_run": 11
+    },
+    {
+      "name": "software/tests/test_speaker_enrollment.py",
+      "exit": 0,
+      "tests_run": 18
+    },
+    {
+      "name": "software/tests/test_public_enrollment.py",
+      "exit": 0,
+      "tests_run": 37
+    },
+    {
+      "name": "software/tests/test_screen_quick_boot.py",
+      "exit": 0,
+      "tests_run": 7
+    },
+    {
+      "name": "software/tetra3d/tests/test_capture_recovery.py",
+      "exit": 0,
+      "tests_run": 8
+    },
+    {
+      "name": "software/tetra3d/tests/test_pcm_gap_filter.py",
+      "exit": 0,
+      "tests_run": 9
+    }
+  ],
+  "total_test_executions": 245,
+  "public_runtime": {
+    "scope": "OFFLINE_PUBLIC_RUNTIME",
+    "payload_files": 204,
+    "private_profiles": 0,
+    "fresh_install": "PASS",
+    "repeat_install": "PASS",
+    "public_assets_verified": "PASS",
+    "empty_start_and_no_permission": "PASS",
+    "local_settings_and_logs_preserved": "PASS",
+    "legacy_baseline_preserved": "PASS",
+    "product_service_install": "PASS_WITH_FAKE_SYSTEMD",
+    "standalone_rebuild": "BYTE_IDENTICAL",
+    "binaries": {
+      "pipeline_backend": "ELF32_ARM",
+      "lib/libonnxruntime.so.1.17.3": "ELF32_ARM"
+    },
+    "hardware_actions": 0,
+    "arm_inference": "NOT_RUN"
+  },
+  "skills": {
+    "module_methods": 7,
+    "pynq_methods": 74,
+    "pynq_subtests": 61,
+    "offline": "PASS",
+    "standalone_pack": "PASS",
+    "temporary_install_files": 44
+  },
+  "report": {
+    "pages": 24,
+    "visual_review": "PASS"
+  },
+  "eda": "NOT_RUN",
+  "hardware": "NOT_RUN",
+  "final_static": {
+    "status": "PASS",
+    "files": 1263,
+    "mapped_files": 1201,
+    "relative_links": 269,
+    "broken_links": 0,
+    "active_local_file_links": 0,
+    "runtime_payload": 204,
+    "runtime_source_match": "PASS",
+    "private_runtime_profiles": 0
+  },
+  "previous_full_isolation": {
+    "zip_crc": "PASS",
+    "workspace_restore_files": 1229,
+    "outside_repository": "PASS",
+    "overwrite_rejected": true,
+    "missing_input_rejected": true,
+    "path_traversal_rejected": true,
+    "restore_traversal_rejected": true,
+    "missing_and_corrupt_original_rejected": true
+  },
+  "layout_check": {
+    "status": "PASS",
+    "restored_files": 1201,
+    "runtime_and_product_rebuild": "PASS",
+    "skills_package_entries": 159,
+    "design_report": "UNCHANGED",
+    "collaboration": "BYTE_IDENTICAL_TO_SUPPLIED_MD",
+    "program_and_hardware": "UNCHANGED",
+    "software_regression": "PRIOR_245_EXECUTIONS_SAME_PROGRAM_BYTES",
+    "report_files": [
+      "design-report.docx",
+      "ai-collaboration.md",
+      "README.md"
+    ]
+  },
+  "documentation_check": {
+    "status": "PASS",
+    "readme": "PROJECT_INTRODUCTION_AND_REPRODUCTION",
+    "restored_files": 1201,
+    "relative_links": 269,
+    "broken_links": 0,
+    "runtime_and_product_docs": "SYNCHRONIZED",
+    "usb_docs": "SYNCHRONIZED",
+    "program_and_hardware": "UNCHANGED",
+    "software_regression": "PRIOR_245_EXECUTIONS_SAME_PROGRAM_BYTES",
+    "hardware_actions": 0
+  }
+}

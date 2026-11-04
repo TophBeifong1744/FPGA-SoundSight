@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "installed_source_bytes_equal": true,
+  "generic_entry_and_references": "PASS",
+  "python38_syntax": "PASS",
+  "skills": [
+    "fpga-module-verification",
+    "pynq-overlay-dma-validation"
+  ],
+  "hardware_actions": 0
+}

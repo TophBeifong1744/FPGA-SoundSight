@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "scope": "offline and optional isolated XSim only",
+  "started_utc": "2026-11-04T04:23:32.773831+00:00",
+  "checks": [
+    {
+      "name": "module-units",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-E",
+        "-s",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\skills\\fpga-module-verification",
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "pynq-units",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-E",
+        "-s",
+        "-B",
+        "-X",
+        "utf8",
+        "scripts/run_offline_tests.py",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\SoundSight\\simulation\\work\\final-release\\document\\evidence\\competition-skills-20261104\\installed-run\\pynq-tests.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\skills\\pynq-overlay-dma-validation",
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "receive",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-E",
+        "-s",
+        "-B",
+        "-X",
+        "utf8",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\SoundSight\\simulation\\work\\final-release\\document\\evidence\\competition-skills-20261104\\installed-run\\receive.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\skills\\pynq-overlay-dma-validation",
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "name": "timeout",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-E",
+        "-s",
+        "-B",
+        "-X",
+        "utf8",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\SoundSight\\simulation\\work\\final-release\\document\\evidence\\competition-skills-20261104\\installed-run\\timeout.json",
+        "--fault",
+        "timeout",
+        "--fault",
+        "abort-timeout"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\skills\\pynq-overlay-dma-validation",
+      "exit_code": 1,
+      "expected_exit": 1
+    },
+    {
+      "name": "board-guard",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-E",
+        "-s",
+        "-B",
+        "-X",
+        "utf8",
+        "scripts/pynq_probe.py",
+        "--profile",
+        "references/example-profile.json",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\SoundSight\\simulation\\work\\final-release\\document\\evidence\\competition-skills-20261104\\installed-run\\forbidden-board.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\skills\\pynq-overlay-dma-validation",
+      "exit_code": 1,
+      "expected_exit": 1
+    }
+  ],
+  "board": "NOT_RUN",
+  "synthesis_implementation": "NOT_RUN",
+  "xsim": "NOT_RUN",
+  "module_unit_tests": 7,
+  "pynq_tests": 74,
+  "pynq_subtests": 61,
+  "checker_sha256": "cfcec7ecb35814768b88302ad01b06a456a71eacf6869730c96b607488878513"
+}

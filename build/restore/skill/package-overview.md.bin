@@ -1,0 +1,12 @@
+# FPGA / PYNQ 通用验证技能包
+
+两个技能支持通过接口合同配置不同工程，可安装到支持 SKILL.md 的助手，也可直接调用脚本。
+
+| 技能 | 适用任务 | 可执行能力 |
+|---|---|---|
+| [fpga-module-verification](fpga-module-verification/README.md) | RTL接口、数值、握手、取消与控制链排障 | 自检TB、XSim运行、故障检出及同输入复测 |
+| [pynq-overlay-dma-validation](pynq-overlay-dma-validation/README.md) | Overlay元数据、DMA所有权、数据及日志检查 | 静态检查、故障模拟、映射式会话审计 |
+
+适用条件、使用方法、失败条件和已验证效果分别在各技能 README 中。[项目案例与交付记录](../../document/competition-skills-delivery.md)介绍验证方法及应用案例。
+
+技能入口使用 `skill.md`；安装工具将其转换为助手识别的 `SKILL.md`。

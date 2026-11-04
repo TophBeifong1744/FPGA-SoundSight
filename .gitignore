@@ -1,0 +1,10 @@
+/build/workspace/
+/build/checks/
+/board/output/
+**/__pycache__/
+*.pyc
+tools.local.env
+*.local.json
+**/speaker-profiles/
+**/speaker-target-data/
+**/backup_runtime_*/

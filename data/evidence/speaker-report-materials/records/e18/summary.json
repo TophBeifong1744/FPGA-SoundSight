@@ -1,0 +1,21 @@
+{
+  "scope": "PC_ONLY_DIRECTION_EXCERPT",
+  "results": [
+    {
+      "name": "solver-options",
+      "returncode": 0,
+      "seconds": 0.926
+    },
+    {
+      "name": "solver-regression",
+      "returncode": 0,
+      "seconds": 5.595
+    },
+    {
+      "name": "spatial-runtime",
+      "returncode": 0,
+      "seconds": 0.165
+    }
+  ],
+  "review_fixes_applied": true
+}

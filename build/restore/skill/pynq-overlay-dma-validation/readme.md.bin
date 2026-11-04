@@ -1,0 +1,34 @@
+# PYNQ Overlay / DMA 验证
+
+版本：2026-11-04。通用静态输入检查、DMA故障模拟、golden比较和会话日志审计工具，运行只需Python标准库，不绑定项目、板型、个人目录或团队流程。
+
+入口为 [SKILL.md](SKILL.md)。工具不导入PYNQ、不做MMIO、不下载或复位。实际产品可以已有板测，不能把“本工具未操作硬件”写成“产品从未板测”；产品实测也不自动覆盖通用故障路径。
+
+## 使用
+
+从本技能目录执行，输出均用新文件名：
+
+```text
+python -B scripts/run_offline_tests.py --output <new-tests.json>
+python -B scripts/simulate_dma.py --contract references/example-session.json --output <new-receive.json>
+python -B scripts/simulate_dma.py --contract references/example-session.json --fault timeout --fault abort-timeout --output <new-timeout.json>
+python -B scripts/validate_profile.py --profile <profile.json> --mode offline --output <new-profile.json>
+python -B scripts/compare_golden.py --expected <golden.bin> --actual <capture.bin> --format bytes --output <new-comparison.json>
+python -B scripts/audit_session.py --contract references/example-audit.json --input <session.json> --output <new-audit.json>
+```
+
+正常模拟预期96字节正确接收并释放；双超时预期退出1、FAIL、retained/session_blocked。示例profile是待填合同，不是可烧录工程。日志字段来自[映射合同](references/session-evidence.md)，不猜寄存器或产品默认值。
+
+## 已验证效果与边界
+
+已有DMA回归覆盖缓存陈旧、短输出、部分启动、超时/取消、停止/状态/释放失败，以及重复证据ID和JSON大整数。2026-10-18的55方法/57子测试为历史结果；当前数量以新执行JSON为准。
+
+会话审计检查结束、故障、清理、停止确认及计数一致性；区分主动淘汰与故障、近期结果与全程累计。它不能认证日志来源、证明未记录的连续性或机械到位。
+
+完整profile当前是loopback合同；单向采集使用receive生命周期合同及实际项目驱动，不能编出MM2S去满足模板。实际驱动接合见[硬件接合](references/hardware-runbook.md)，保护入口不替换生产驱动。
+
+## 方法来源
+
+由缺源、HWH实例误匹配、重复ID覆盖失败、缓存/取消和数值误判提炼输入及所有权检查；由采集与异步推理/存储共存提炼[持续运行方法](references/continuous-runtime.md)。不绑定采样率、引脚、CPU核、阈值或许可时长。
+
+[验证状态](references/validation-status.md)区分历史、本次离线检查及外部实测。合成bit/HWH只供测试，不得下载。采用[MIT许可](LICENSE.txt)，厂商工具和模型不随技能分发。

@@ -1,0 +1,2 @@
+# Keep the exact packaged bytes, including hashes and Linux script line endings.
+* -text

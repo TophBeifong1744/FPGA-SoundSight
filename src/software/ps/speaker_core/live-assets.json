@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "enrollment": "local_only",
+  "sha256": {
+    "pipeline_backend": "7f639be442e840d1f70295e16d92b6d2b6db524dd6aa9143168da6a177f9c174",
+    "frontend.f32": "f73e592e890a555f8e55f6b47017f69a07285ee73aa0ab0b14073791ec7b7875",
+    "lib/libonnxruntime.so.1.17.3": "7ead8adf2d49785e2dbeb8bb4eff976368da1908594b808b3b0bab80f3952970",
+    "models/int8-head.onnx": "e14405d2580db61c1359808102c7f7f8ac73623303c2076087d2a9efd7ebc4f4",
+    "models/silero_vad.onnx": "597d30b3ec076608d059477bb14cfeffdf951bf5cae370d38f65d33bbfe82004"
+  }
+}

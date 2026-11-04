@@ -1,0 +1,7 @@
+# Vivado 报告
+
+- [实现阶段报告：S2 硬件 / P1 软件](screen_s2_20261103/readme.md)：布局布线资源、时序及 BD 导出。
+- [综合阶段资源报告](synthesis_20261104/readme.md)：独立的 Synthesized 资源统计。
+
+两类报告按生成阶段分别保存，报告正文中的实现资源与时序指标保持原口径。
+配套复现材料位于 [handoff](../../handoff/readme.md)。

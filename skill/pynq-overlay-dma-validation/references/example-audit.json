@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "success": {
+    "path": [
+      "result"
+    ],
+    "allowed": [
+      "PASS"
+    ]
+  },
+  "zero": [
+    [
+      "runtime",
+      "faults"
+    ],
+    [
+      "hardware",
+      "stream_errors"
+    ]
+  ],
+  "empty": [
+    [
+      "error"
+    ],
+    [
+      "cleanup_errors"
+    ]
+  ],
+  "true": [
+    [
+      "dma_halted"
+    ]
+  ],
+  "counters": [
+    {
+      "name": "snapshot_evictions",
+      "start": [
+        "runtime",
+        "evictions_start"
+      ],
+      "end": [
+        "runtime",
+        "evictions_end"
+      ]
+    }
+  ],
+  "duration": [
+    "elapsed_seconds"
+  ],
+  "tail": {
+    "path": [
+      "hardware",
+      "fault"
+    ],
+    "allowed_mask": 64,
+    "stop_path": [
+      "stop_reason"
+    ],
+    "stop_values": [
+      "user_stop"
+    ]
+  },
+  "recent_results": [
+    "inference",
+    "recent_results"
+  ],
+  "statistics": [
+    "inference",
+    "statistics"
+  ]
+}

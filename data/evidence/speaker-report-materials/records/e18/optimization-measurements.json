@@ -1,0 +1,12 @@
+{
+  "scope": "PC_X86_DIRECTION_EXCERPT",
+  "synthetic_examples": {
+    "direction_rms_before_deg": 2.722807,
+    "direction_rms_after_deg": 0.898019,
+    "reacquire_ms_after_first_candidate": 40,
+    "weighted_bad_pair_before_deg": 4.049,
+    "weighted_bad_pair_after_deg": 1.747,
+    "unweighted_residual_before_samples": 0.231,
+    "unweighted_residual_after_samples": 0.265
+  }
+}

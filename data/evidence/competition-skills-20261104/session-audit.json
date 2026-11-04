@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "evidence_level": "static",
+  "board_execution": false,
+  "errors": [],
+  "metrics": {
+    "elapsed_seconds": 975.373838348,
+    "snapshot_evictions": 55350,
+    "final_status": 64,
+    "recent_result_count": 32,
+    "session_statistics": null
+  },
+  "conclusions": {
+    "mechanical_arrival": "NOT_DETERMINED",
+    "unrecorded_pcm_continuity": "NOT_DETERMINED",
+    "recognition_accuracy": "NOT_DETERMINED"
+  },
+  "reproduce": "python -B scripts/audit_session.py --contract <contract.json> --input <session.json> --output <new-report.json>",
+  "input_sha256": "47b5e0d1d7737e300525401121b5e4870e1b1ef60e021bc867f7a2b9ccd99099"
+}
